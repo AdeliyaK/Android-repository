@@ -34,11 +34,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void onBtnClick(View view){
         TextView textHello = findViewById(R.id.txtMessage);
-        EditText edtTxtName = findViewById(R.id.edtText);
+        EditText edtTxtName = findViewById(R.id.edtTextName);
+        EditText edtTxtFamilyname = findViewById(R.id.edtTextFamilyname);
+        EditText editTxtEmail = findViewById(R.id.edtTextEmail);
+
 
 
         //textHello.setText("Hello ".concat(edtTxtName.getText().toString()));
-        textHello.setText("Hello " + edtTxtName.getText().toString());
+        textHello.setText("Hello " + edtTxtName.getText().toString() + " " + edtTxtFamilyname.getText().toString() + "\n" + "Your email is: " + editTxtEmail.getText().toString());
     }
 
 }
